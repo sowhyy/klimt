@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+a { text-decoration: none; color: inherit; }
+* {  box-sizing: border-box;  }
+body {
+  height: 100vh;
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Spoqa Han Sans Neo', 'sans-serif'; */
+}
+header, main section article {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 30%;
+  height: 100%;
+}
+main {
+  margin-left: 30%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3%;
+  overflow : scroll;
+  overflow-x : hidden;
+}
+
+header h1 {
+  color: #111;
+  font-size: 80px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  /* text-transform: uppercase; */
+}
+
+aside {
+  font-family: 'Spoqa Han Sans Neo';
+  padding-bottom: 150px;
+  line-height: 1.5;
+}
+
+aside h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+}
+aside h3 span {
+  font-size: 16px;
+}
+aside dl {
+  position: relative;
+}
+aside dl dd {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+aside dl dd.hidden {
+  display: none;
+}
+aside dl dd ul {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+aside dl dt {
+  display: block;
+  padding-top: 5%;
+  font-size: 20px;
+  font-weight: 500;
+}
+aside dl dt:hover {
+  cursor: pointer;
+  color: #A27CBA;
+
+}
+aside li {
+  font-size: 18px;
+}
+aside dl dt.on {
+  color: #E3C454;
+  text-decoration: 1px solid;
+}
+
+
+
+
+
+/* ============= */
+
+nav {
+  /* font-family: 'Spoqa Han Sans Neo'; */
+  font-family: 'Playfair Display', serif;
+  opacity: .8;
+  background-color: #E3C454;
+  box-shadow: 0 10px 20px rgba(158, 126, 11, 0.3);
+  color: #fff;
+  padding: 40px;
+  position: sticky;
+  padding-top: 100px;
+  top: -70px;
+}
+nav ul {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+nav ul li {
+  float: left;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+
+main section {
+  background: linear-gradient(
+      to bottom,
+      rgba(130, 106, 44, .1) 1%,
+      transparent,
+      transparent
+    )
+    #fff;
+  height: 125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #302a1c;
+}
+main section article {
+  width: 60%;
+}
+figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+figure h4 {
+  font-size: 25px;
+}
+figure h5 {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+main section img {
+  height: 80vh;
+  object-fit: contain;
+  box-shadow: 
+  0 80px 80px -80px rgb(214, 167, 36), 
+  0 0 12px rgba(0, 0, 0, .06),
+  inset 0 0 0 1px rgba(0, 0, 0, .2);
+  margin-bottom: 80px;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f2da7a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E3C454;
+}
